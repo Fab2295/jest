@@ -1,0 +1,21 @@
+@url = http://localhost:
+@port = 4004
+@username=alice
+@password=
+
+##somar
+GET {{url}}{{port}}/odata/v4/MeuServico/somar(a=3,b=5)
+Accept: application/json
+Authorization: Basic {{username}}{{password}}
+
+##multiplicar
+###
+GET {{url}}{{port}}/odata/v4/MeuServico/multiplicar(a=3,b=5)
+Accept: application/json
+Authorization: Basic {{username}}{{password}}
+
+##diidir
+###
+GET {{url}}{{port}}/odata/v4/MeuServico/dividir(a=3,b=5)
+Accept: application/json
+Authorization: Basic {{username}}{{password}}
