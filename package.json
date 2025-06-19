@@ -1,0 +1,26 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/cds-test": "^0.3.0",
+    "@cap-js/cds-types": "^0.11.0",
+    "@cap-js/sqlite": "^2",
+    "jest": "^30.0.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "test": "jest --silent",
+    "test:coverage": "jest --silent --coverage"
+  }
+}
